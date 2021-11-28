@@ -40,7 +40,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="col cont3col1row1-col2">
-                    <button class="btn btn-outline-dark btn-lg">
+                    <button class="btn btn-outline-dark btn-lg tipografia">
                         Read more
                     </button>
                 </div>   
@@ -53,7 +53,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col cont3col1row2-col2">
-                <button class="btn btn-outline-dark btn-lg">
+                <button class="btn btn-outline-dark btn-lg tipografia">
                     Read more
                 </button>
             </div>
@@ -67,7 +67,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
             <div class="cont3col2bloque1-div2">
-                <button class="btn btn-outline-dark btn-lg">Read more</button>
+                <button class="btn btn-outline-dark btn-lg tipografia">Read more</button>
             </div>
         </div>
         <div class="cont3col2bloque2">
@@ -76,7 +76,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
             <div class="cont3col2bloque2-div2">
-                <button class="btn btn-outline-dark btn-lg">Read more</button>
+                <button class="btn btn-outline-dark btn-lg tipografia">Read more</button>
             </div>
         </div>
     </div>
@@ -140,9 +140,25 @@
     </div>
 
     <div class="contenedorSiete">
-        <div class="cont7col1">
-            <img src="./img/frontmuseum.jpg" alt="museum">
-        </div>
+        <div id="gallery" class="carousel slide cont7col1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/salvadordali1.jpg" class="d-block w-100" alt="Dali">
+              </div>
+              <div class="carousel-item">
+                <img src="img/salvadordali2.jpg" class="d-block w-100" alt="Dali">
+              </div>
+              <div class="carousel-item">
+                <img src="img/salvadordali3.jpg" class="d-block w-100" alt="Dali">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         <div class="cont7col2">
             <h2>THERE IS A GALLERY</h2>
         </div>
@@ -210,23 +226,25 @@
         <div class="cont10col3">
             <form action="">
                 <div class="row cont10col3row1">
-                    <div class="col">
+                    <div class="col tipografia">
                         <input type="text" placeholder="Name">
                     </div>
-                    <div class="col">
+                    <div class="col tipografia">
                         <input type="text" placeholder="Email">
                     </div>                   
                 </div>
-                <div class="row cont10col3row2">
+                <div class="row cont10col3row2 tipografia">
                     <input type="text" placeholder="Message">
                 </div>
                 <div class="row cont10col3row3">                   
-                        <button class="btn btn-outline-dark btn-sm">
+                        <button class="btn btn-outline-dark btn-sm tipografia">
                             Send
                         </button>                   
                 </div>
             </form>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

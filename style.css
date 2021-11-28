@@ -7,6 +7,10 @@ h1,h2,h3,p,a {
   font-family: "Exo", sans-serif;
 }
 
+/* para los botones de bootstrap y el formulario*/
+.tipografia {
+  font-family: "Exo", sans-serif;
+}
 
 /* bordes de los bloques*/
 .contenedorUno div, .contenedorDos div, .contenedorCuatro div, .contenedorCinco div, .contenedorSeis div, .contenedorSiete div, .contenedorOcho div, .contenedorNueve div {
@@ -41,10 +45,9 @@ h1,h2,h3,p,a {
 .features div {
   text-align: left;
   padding: 15px;
-  font-size: 15px;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Exo", sans-serif;
 }
 
 .contact {
