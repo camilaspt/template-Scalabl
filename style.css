@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-h1,h2,h3,p,a {
-  font-family: "Exo", sans-serif;
-}
-
-/* para los botones de bootstrap y el formulario*/
-.tipografia {
+.body{
   font-family: "Exo", sans-serif;
 }
 
@@ -16,6 +14,11 @@ h1,h2,h3,p,a {
 .contenedorUno div, .contenedorDos div, .contenedorCuatro div, .contenedorCinco div, .contenedorSeis div, .contenedorSiete div, .contenedorOcho div, .contenedorNueve div {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+.contenedor{
+  width: 100%;
+  margin: auto;
 }
 
 /*PRIMERA FILA*/
@@ -28,11 +31,17 @@ h1,h2,h3,p,a {
 .brutal {
   grid-column: 1/2;
   grid-row: 1/2;
+  display: flex;
   text-align: center;
-  text-justify: auto;
-  font-size: 150px;
-  padding: 50px;
-  letter-spacing: 140px;
+  align-items: center;
+  justify-content: center;
+  text-justify: center;
+  box-sizing: border-box;
+}
+
+.brutal h1{
+  font-size: 80%;
+  letter-spacing: fit-content;
 }
 
 .features {
@@ -44,10 +53,11 @@ h1,h2,h3,p,a {
 
 .features div {
   text-align: left;
-  padding: 15px;
   align-items: flex-start;
   justify-content: center;
-  font-family: "Exo", sans-serif;
+  width: 100%;
+  padding: 1vmax;
+  font-size: 15px;
 }
 
 .contact {
@@ -86,18 +96,20 @@ h1,h2,h3,p,a {
 
 .action {
   grid-column: 2/3;
+  display: flex;
 }
 
 .action div {
   background-color: black;
-  margin: 30px 15px;
-  height: 70%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .action div p {
   color: white;
   text-decoration: underline solid white;
-  margin: 60px 300px;
+  margin: 10vmax 25vmax;
   font-size: 17px;
 }
 
@@ -253,16 +265,18 @@ h1,h2,h3,p,a {
 .contenedorCinco {
   display: grid;
   grid-template-columns: 17% 27% 28% 28%;
-  grid-template-rows: 200px;
+  grid-template-rows: auto;
 }
 
 .cont5col1 {
   grid-column: 1/2;
   display: flex;
   justify-content: flex-start;
-  padding-left: 15px;
-  padding-right: 60px;
-  align-items: center;
+  text-align: start;
+}
+
+.cont5col1 h2{
+  padding: 3vmax 12vmax 3vmax 2vmax;
 }
 
 .cont5col2 {
@@ -272,17 +286,8 @@ h1,h2,h3,p,a {
   align-items: center;
 }
 
-.description-price {
-  position: relative;
-  right: 5px;
-  top: 80px;
-  left: 30px;
-  text-decoration: underline;
-}
-
-.price {
-  text-align: center;
-  padding-left: 30%;
+.cont5col2 div, .cont5col3 div, .cont5col4 div{
+  border: none;
 }
 
 .cont5col3 {
@@ -297,6 +302,15 @@ h1,h2,h3,p,a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.description-price {
+  text-decoration: underline;
+}
+
+.price {
+  text-align: center;
+  padding-left: 30%;
 }
 
 /*FILA VIDEO*/
@@ -523,7 +537,7 @@ h1,h2,h3,p,a {
   justify-content: center;
   padding: 17px;
   text-align: center;
-  border: 1px solid black;
+  border-bottom: 1px solid black; 
 }
 
 .cont10col2 {
@@ -580,4 +594,128 @@ h1,h2,h3,p,a {
   height: 50%;
   margin-right: 40px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px){
+
+  .brutal{
+    padding: 6vmax;
+  }
+
+  .features{
+    padding: 3vmax;
+  }
+  
+  .features div{
+    padding-left: 4vmax;
+  }
+  
+  .brutalist h2{
+    padding: 2vmax 0vmax 2vmax 4vmax;
+    margin: 0;
+  }
+
+  .brutalist p{
+    padding: 0vmax 0vmax 2vmax 4vmax;
+    margin: 0;
+  }
+
+  .action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action div{
+    margin: 5vmax;    
+  }
+
+  .cont3col2rowLarge h2{
+    padding: 4vmax;
+    padding-left: 2vmax;
+    margin: 0;
+  }
+
+  .cont3col2bloque1-div1, .cont3col2bloque2-div1{
+    padding-top: 2vmax;
+  }
+
+  .cont3col2bloque1-div2, .cont3col2bloque2-div2{
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .foto1 img, .foto2 img, .foto3 img, .foto4 img, .foto5 img, .foto6 img, .foto7 img, .foto8 img{
+    padding-top: 5vmax;
+    margin: 0;
+  }
+
+  .products{
+    padding: 8vmax;
+  }
+
+  .cont5col1{
+    padding: 5vmax;
+  }
+
+  .cont5col2 div, .cont5col3 div, .cont5col4 div{
+    padding: 2vmax;
+    border: 0px;
+  }
+
+  .price h2{
+    padding: 2vmax;
+    margin: 0;
+  }
+
+  .description-price p{
+    margin: 0;
+  }
+
+  .cont6col2 img{
+    width: 100%;
+  }
+
+  .cont7col1 img{
+    width: 20vmax;
+    height: 40vmax;
+  }
+
+  .cont8col1row1 h2, .cont8col1row2 h2, .cont8col3row1 h2, .cont8col3row2 h2{
+    padding: 4vmax 10vmax 1vmax 4vmax;
+    margin: 0;
+  }
+
+  .cont8col1row1 p, .cont8col1row2 p, .cont8col3row1 p, .cont8col3row2 p{
+    padding: 1vmax 10vmax 1vmax 4vmax;
+    margin: 0;
+  }
+
+  .cont8col1row1 a, .cont8col1row2 a, .cont8col3row1 a, .cont8col3row2 a{
+    padding: 0vmax 10vmax 2vmax 4vmax;
+    margin: 0;
+  }
+
+  .cont8things h1, .cont9col1 h2{
+    padding: 3vmax;
+    margin: 0;
+  }
+
+  .cont9col2 p, .cont9col4 p, .cont9col6 p{
+    padding: 2vmax;
+    margin: 0;    
+  }
+
+  .cont10col2 h1{
+    padding-left: 20vmax;
+    padding-right: 20vmax;
+  }
 }
